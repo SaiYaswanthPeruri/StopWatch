@@ -16,7 +16,7 @@ function start(){
 }
 
 function stop(){
-    if(!isRunning){
+    if(isRunning){
         clearInterval(timer);
         elapsedTime = Date.now() - startTime;
         isRunning = false;
